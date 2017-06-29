@@ -1,0 +1,24 @@
+/*此样式文件是为了更改antd-mobile的自带样式*/
+:global {
+  .am-search{
+    background-color: #fff!important;
+    .am-search-input input[type="search"]{
+      opacity: 0.5;
+      border: 1px solid #ccc;
+      background-color: #EFEFF4;
+    }
+    input[type="search"]{
+      border-radius: 30px;
+    }
+  }
+  .am-grid .am-flexbox .am-flexbox-item .am-grid-item-content .am-grid-item-inner-content{
+    justify-content:flex-start;
+    .am-grid-icon{
+      width: 48%;
+      height: 48%;
+    }
+    .am-grid-text{
+      margin-top: 0.1rem;
+    }
+  }
+}

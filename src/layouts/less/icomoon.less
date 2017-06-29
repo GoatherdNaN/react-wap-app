@@ -1,0 +1,41 @@
+// web字体
+:global {
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('../../layouts/fonts/icomoon.eot?keomgw');
+    src:  url('../../layouts/fonts/icomoon.eot?keomgw#iefix') format('embedded-opentype'),
+    url('../../layouts/fonts/icomoon.ttf?keomgw') format('truetype'),
+    url('../../layouts/fonts/icomoon.woff?keomgw') format('woff'),
+    url('../../layouts/fonts/icomoon.svg?keomgw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 0.44rem;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-dice:before {
+    content: "\e915";
+  }
+  .icon-compass2:before {
+    content: "\e94a";
+  }
+  .icon-user:before {
+    content: "\e971";
+  }
+  .icon-home3:before {
+    content: "\e902";
+  }
+}

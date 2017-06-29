@@ -1,0 +1,104 @@
+{
+  "Demo": [
+    {
+      "url":"/instock/list",
+      "desc":"获取入库页面的列表",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "data": {
+          "data|8":[{
+            "listNumber": "@id",
+            "username": "@cname",
+            "date":"@datetime",
+            "createTime":"@datetime",
+            "status":"@natural(1, 2)",
+            "description":"@cparagraph(18,20)",
+            "imgUrl":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495883129967&di=87d5ec6cb926634f18f293b34a88b81d&imgtype=0&src=http%3A%2F%2Fimg.bitscn.com%2Fupimg%2Fallimg%2Fc160120%2F1453262W253120-12J05.jpg"
+          }],
+          "total":"@natural(73, 80)"
+        },
+        "msg": "OK"
+      }
+    },
+    {
+      "url":"/instock/edit",
+      "desc":"入库页面的编辑接口",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "msg": "OK"
+      }
+    },
+    {
+      "url":"/instock/newlist",
+      "desc":"入库页面的新建入库单接口",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "data":{
+          "listNumber": "@id",
+          "description":"@cparagraph(18,20)"
+        },
+        "msg": "OK"
+      }
+    },
+    {
+      "url":"/instock/delete",
+      "desc":"入库页面的删除接口",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "msg": "OK"
+      }
+    },
+    {
+      "url":"/login",
+      "desc":"登陆接口",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "msg": "OK"
+      }
+    },
+    {
+      "url":"/statistics/data",
+      "desc":"统计界面第一个图标的接口",
+      "mock":true,
+      "res":{
+        "code": 200,
+        "data":{
+            "入库量":{
+      					"1":"@natural(1000, 10000)",
+      					"2":"@natural(1000, 10000)",
+      					"3":"@natural(1000, 10000)",
+      					"4":"@natural(1000, 10000)",
+      					"5":"@natural(1000, 10000)",
+      					"6":"@natural(1000, 10000)",
+      					"7":"@natural(1000, 10000)",
+      					"8":"@natural(1000, 10000)",
+      					"9":"@natural(1000, 10000)",
+      					"10":"@natural(1000, 10000)",
+      					"11":"@natural(1000, 10000)",
+      					"12":"@natural(1000, 10000)"
+				    },
+            "出库量":{
+      					"1":"@natural(1000, 10000)",
+      					"2":"@natural(1000, 10000)",
+      					"3":"@natural(1000, 10000)",
+      					"4":"@natural(1000, 10000)",
+      					"5":"@natural(1000, 10000)",
+      					"6":"@natural(1000, 10000)",
+      					"7":"@natural(1000, 10000)",
+      					"8":"@natural(1000, 10000)",
+      					"9":"@natural(1000, 10000)",
+      					"10":"@natural(1000, 10000)",
+      					"11":"@natural(1000, 10000)",
+      					"12":"@natural(1000, 10000)"
+				    }
+        },
+        "msg": "OK"
+      }
+    }
+  ]
+}

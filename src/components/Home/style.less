@@ -1,0 +1,208 @@
+.slide-container{
+    position:sticky;
+    left: 0;
+    top:0;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    overflow: hidden;
+    overflow-x: auto;
+    text-align: left;
+    background: #fff;
+    white-space: nowrap;
+    border-bottom: 1px solid #ccc;
+    li{
+        text-align: center;
+        &.activeLi{
+          color: #f00;
+          font-size: 0.3rem;
+          font-weight: bold;
+        }
+        height: 60px;
+        display: inline-block;
+        line-height: 60px;
+        text-align: center;
+        width: 94px;
+        font-size: 0.28rem;
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.my-carousel {
+  background: #fff;
+  .v-item {
+    height: 0.72rem;
+    line-height: 0.72rem;
+    padding-left: 0.2rem;
+  }
+  a {
+    display: inline-block;
+    width: 100%;
+    margin: 0; padding: 0;
+    img {
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+}
+
+
+.home-category{
+	background-color: #fff;
+
+	.carousel-item{
+    height: 266px;
+		ul{
+			padding-left: 0;
+      li{
+        display: block;
+        list-style: none;
+        width: 20%;
+        background-repeat: no-repeat;
+        background-size: 0.72rem auto;
+        background-position: 50% 18%;
+        text-align: center;
+        padding-top: 0.9rem;
+        color:#666;
+        font-size: 0.22rem;
+      }
+      li.jingdian{
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126194705meishi.png);
+      }
+      li.ktv {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126203542ktv.png);
+      }
+      li.gouwu {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160314121215icongouwu135.png);
+      }
+      li.shenghuofuwu {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20170308125500community_new.png);
+      }
+      li.yundongjianshen {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126203617jianshen.png);
+      }
+      li.qinzi {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126203905qinzi.png);
+      }
+      li.zizhucan {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160204173511zizhucan.png);
+      }
+      li.aiche {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126203742aiche.png);
+      }
+      li.meishi {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126194705meishi.png);
+      }
+      li.dianying {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20170223152109dp_wx_maoyan_icon.png);
+      }
+      li.jiudian {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126203337jiudian.png);
+      }
+      li.xiuxianyule {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126202841xiuxianyule.png);
+      }
+      li.waimai {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126203251waimai.png);
+      }
+      li.huoguo {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160204172927huoguo.png);
+      }
+      li.liren {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126202946liren.png);
+      }
+      li.zhoubianyou {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126203440zhoubianyou.png);
+      }
+      li.hunshasheying {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160126203830jiehun.png);
+      }
+      li.xuexipeixun {
+        background-image: url(https://www.dpfile.com/gp/cms/1455525720807.png);
+      }
+      li.jiazhuang {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20161213162031zhuangxiu.png);
+      }
+      li.quanbufenlei {
+        background-image: url(https://www.dpfile.com/sc/eleconfig/20160125182200more.png);
+      }
+		}
+	}
+
+	.index-container{
+		ul{
+			width: 100%;
+			height: auto;
+			text-align: center;
+      padding-left: 0;
+      margin: 0 0;
+		}
+		li{
+			list-style: none;
+			display: inline-block;
+			height: 8px;
+			width: 8px;
+			border-radius: 4px;
+			background-color: #ccc;
+			margin: 0 3px;
+		}
+		li.selected{
+			background-color: rgb(233, 32, 61);
+		}
+	}
+}
+
+.news-list{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  li{
+    border-bottom: 1px solid #ccc;
+    height: auto;
+    padding: 16px 20px;
+    background-color: #fff;
+    h5{
+        max-height:60px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-align:left;
+        vertical-align:middle;
+    }
+    img{
+      width: 100%;
+    }
+    section{
+      width: 100%;
+      margin-top: 10px;
+      height: 0.32rem;
+      font-size: 0.2rem;
+      display: flex;
+      justify-content:space-between;
+      div{
+        height: 0.32rem;
+        line-height: 0.32rem;
+        &:nth-child(1){
+          flex:1;
+          span{
+            &:nth-child(1){
+              margin-right: 30px;
+            }
+            margin-right: 6px;
+          }
+        }
+        &:nth-child(2){
+          text-align: right;
+          flex:1;
+        }
+      }
+    }
+  }
+}
