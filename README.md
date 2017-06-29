@@ -20,6 +20,7 @@ npm run build    生产环境项目打包
 - 实现搜索界面，广告跑马灯，导航，新闻预览
 - 实现个人中心
 - 实现长列表无限加载
+
 ![image](https://github.com/GoatherdNaN/react-wap-app/blob/master/screenshots/Index1.png?raw=true)
 ![image](https://github.com/GoatherdNaN/react-wap-app/blob/master/screenshots/Index2.png?raw=true)
 
