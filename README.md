@@ -1,23 +1,26 @@
 ## 前言
-> 使用基于nodejs的express框架搭建后台
+> react全家桶的移动端个人最佳实践，UI参照之前做过的浏览器主页项目和新闻门户项目
 ## 项目说明
-> 此项目是本人对于nodejs的一个简单尝试。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型,使其轻量又高效。
+> 目前只把框架整体部署完成，打通了路由，并完成了首页，后续有时间将持续完善全部功能
 ## 下载
 
 ```
 git clone
-cd node-express-demo
+cd react-wap-app
 npm i
 ```
 ## 启动
 
 ```
 <!--安装前请先确保已安装node和npm-->
-npm start   启动项目并启动服务器
+npm run server   启动项目并启动服务器
+npm run build    生产环境项目打包
 ```
 ## 目标功能
-- 实现cookie登陆验证及退出登录
-- 实现对数据的增删改查
-- 实现日志功能
+- 实现搜索界面，广告跑马灯，导航，新闻预览
+- 实现个人中心
+- 实现长列表无限加载
 
+![image](https://github.com/GoatherdNaN/react-wap-app/blob/master/screenshots/Index1.png?raw=true)
+![image](https://github.com/GoatherdNaN/react-wap-app/blob/master/screenshots/Index2.png?raw=true)
 
