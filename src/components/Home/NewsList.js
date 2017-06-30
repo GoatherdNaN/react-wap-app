@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import {getDateDiff,RandomNumBoth} from 'utils/util'
+import {getDateDiff,RandomNumBoth,propOrStateIsChange} from 'utils/util'
 import jsonp from 'jsonp'
 import styles from './style.less'
 import { Flex,WhiteSpace  } from 'antd-mobile';
@@ -30,6 +30,7 @@ export default class Index extends React.Component {
     ]
   }
   componentWillMount=()=>{
+    console.log('/')
     jsonp('http://m.toutiao.com/list/?tag=__all__&ac=wap&count=20&format=json_raw&as=A125A8CEDCF8987&cp=58EC18F948F79E1&min_behot_time=' + parseInt((new Date().getTime()) / 1000),
       (err, res)=>{
           let listArr = [];
@@ -51,8 +52,12 @@ export default class Index extends React.Component {
       }
     );
   }
+  shouldComponentUpdate = (nextProps, nextState) => {
+    return propOrStateIsChange(this,nextProps, nextState)
+}
   render() {
     let {listArr}=this.state;
+    console.log('///',listArr)
     return (
         <ul className={styles['news-list']}>
           {

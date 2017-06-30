@@ -1,3 +1,4 @@
+import { is } from 'immutable';
  //判断访问终端
 export const Browser = {
     versions: function () {
@@ -59,4 +60,8 @@ export const RandomNumBoth = (Min,Max) => {
       let Rand = Math.random();
       let num = Min + Math.round(Rand * Range); //四舍五入
       return num;
+}
+export const propOrStateIsChange = (context,nextProps, nextState) => {
+    return !(context.props === nextProps || is(context.props, nextProps)) ||
+           !(context.state === nextState || is(context.state, nextState));
 }
